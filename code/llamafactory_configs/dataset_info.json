@@ -1,0 +1,18 @@
+{
+  "colabscience_presenter_sft": {
+    "file_name": "presenter_sft_data.json",
+    "file_sha1": null,
+    "hf_hub_url": null,
+    "ms_hub_url": null,
+    "columns": {
+      "prompt": "instruction",
+      "query": "input", 
+      "response": "output"
+    },
+    "tags": {
+      "task": "sft",
+      "language": "en",
+      "domain": "scientific_collaboration"
+    }
+  }
+}

@@ -1,0 +1,72 @@
+### LLaMA Factory SFT Training Configuration for Presenter
+model_name_or_path: meta-llama/Llama-3.1-8B-Instruct
+adapter_name_or_path: null
+cache_dir: null
+use_fast_tokenizer: true
+model_revision: main
+quantization_bit: null
+rope_scaling: null
+flash_attn: auto
+shift_attn: false
+
+### Dataset settings  
+dataset: colabscience_presenter_sft
+template: llama3
+cutoff_len: 4096
+output_dir: ./saved_models/presenter_sft
+overwrite_cache: false
+preprocessing_num_workers: 16
+max_samples: 100000
+dataset_dir: ./data
+val_size: 0.1
+sft_packing: false
+
+### Training arguments
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_target: all
+lora_rank: 16
+lora_alpha: 64
+lora_dropout: 0.05
+use_rslora: false
+create_new_adapter: false
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 8
+per_device_eval_batch_size: 2
+eval_steps: 500
+logging_steps: 10
+save_steps: 500
+save_total_limit: 2
+max_steps: -1
+num_train_epochs: 3.0
+max_grad_norm: 1.0
+learning_rate: 5.0e-5
+weight_decay: 0.0
+optim: adamw_torch
+max_length: 4096
+lr_scheduler_type: cosine
+warmup_ratio: 0.03
+
+### Generation arguments  
+do_sample: true
+temperature: 0.95
+top_p: 0.9
+top_k: 50
+num_beams: 1
+max_new_tokens: 512
+repetition_penalty: 1.0
+
+### Checkpointing and logging
+output_dir: ./saved_models/presenter_sft
+logging_dir: ./logs/presenter_sft
+run_name: presenter_sft_training
+logging_steps: 10
+save_strategy: steps
+save_steps: 500
+save_total_limit: 2
+load_best_model_at_end: false
+gradient_checkpointing: true
+report_to: []
+use_wandb: false
+plot_loss: true

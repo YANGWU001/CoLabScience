@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Model checkpoints and logs
+code/saved_models/
+code/logs/
+*.log
+
+# Generated training data
+code/data/
+data/sft_augmented_data.json
+data/grpo_pn_data.json
+
+# Environment
+.env
+.venv/
+
+# OS
+.DS_Store
+__MACOSX/
+
+# Archives (source zips, not needed in repo)
+*.zip
+
+# LLaMA Factory clone
+LLaMA-Factory/
