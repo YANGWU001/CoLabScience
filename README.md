@@ -1,13 +1,14 @@
 # CoLabScience: A Proactive AI Assistant for Biomedical Discovery and LLM-Expert Collaborations
 
+[![Paper](https://img.shields.io/badge/Paper-ACL%202026-blue)](https://aclanthology.org/2026.acl-long.1671/)
+[![PDF](https://img.shields.io/badge/PDF-Download-red)](https://aclanthology.org/2026.acl-long.1671.pdf)
 [![GitHub](https://img.shields.io/badge/Code-GitHub-black)](https://github.com/YANGWU001/CoLabScience)
-[![Paper](https://img.shields.io/badge/Paper-ACL%202026-blue)](https://github.com/YANGWU001/CoLabScience)
 
 **Official implementation of "Excuse me, may I say something... CoLabScience, A Proactive AI Assistant for Biomedical Discovery and LLM-Expert Collaborations"**
 
 *Yang Wu, Jinhong Yu, Jingwei Xiong, Zhimin Tao, Xiaozhong Liu*
 
-**Published in:** Proceedings of the Association for Computational Linguistics (ACL 2026)
+**Published in:** Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)
 
 ---
 
@@ -218,10 +219,11 @@ See the paper for detailed experimental results and analysis.
 If you find this work useful, please cite our paper:
 
 ```bibtex
-@inproceedings{wu2026colabscience,
-  title={"Excuse me, may I say something..." CoLabScience, A Proactive {AI} Assistant for Biomedical Discovery and {LLM}-Expert Collaborations},
+@inproceedings{wu2026excuse,
+  title={" Excuse me, may I say something..." CoLabScience, A Proactive AI Assistant for Biomedical Discovery and LLM-Expert Collaborations},
   author={Wu, Yang and Yu, Jinhong and Xiong, Jingwei and Tao, Zhimin and Liu, Xiaozhong},
-  booktitle={Proceedings of the Association for Computational Linguistics (ACL 2026)},
+  booktitle={Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+  pages={36109--36129},
   year={2026}
 }
 ```
@@ -247,7 +249,9 @@ For questions or issues, please:
 - Open an issue on GitHub
 - Contact the authors via the paper correspondence
 
-**GitHub**: [https://github.com/YANGWU001/CoLabScience](https://github.com/YANGWU001/CoLabScience)
+**Paper:** [https://aclanthology.org/2026.acl-long.1671/](https://aclanthology.org/2026.acl-long.1671/)  
+**PDF:** [https://aclanthology.org/2026.acl-long.1671.pdf](https://aclanthology.org/2026.acl-long.1671.pdf)  
+**GitHub:** [https://github.com/YANGWU001/CoLabScience](https://github.com/YANGWU001/CoLabScience)
 
 ---
 
